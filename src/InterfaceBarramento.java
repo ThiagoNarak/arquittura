@@ -1,3 +1,4 @@
+@Deprecated
 public interface InterfaceBarramento {
 
     public void sendCpu(Instrucao instrucao);

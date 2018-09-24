@@ -1,7 +1,7 @@
 import util.EnumCod;
 
 import java.util.Arrays;
-
+@Deprecated
 public class CpuReserva {
 
     private int pi;  //ponteiro de instrucao

@@ -30,10 +30,13 @@ private int larguraBarramento;
                     return shortToByte(vetorIntMov);
                 }else if (larguraBarramento==32){
 
-                    return intToByte(vetorIntMov);
+                   return intToByte(vetorIntMov);
+//                   return shortToByte(vetorIntMov);
+
                 }else {
 
                     return longToByte(new Long[]{Long.valueOf(vetorIntMov[0]), Long.valueOf(vetorIntMov[1]), Long.valueOf(vetorIntMov[2])});
+//                   return shortToByte(vetorIntMov);
                 }
 
 
@@ -102,6 +105,7 @@ private int larguraBarramento;
                 }else if (larguraBarramento==32){
 
                     return intToByte(vetorIntAdd);
+
 
                 }else {
                     return longToByte(new Long[]{Long.valueOf(vetorIntAdd[0]), Long.valueOf(vetorIntAdd[1]), Long.valueOf(vetorIntAdd[2])});
@@ -209,10 +213,10 @@ private int larguraBarramento;
     private int hexToInt(String cmd){
 
 
-        return Integer.parseInt(cmd.substring(2, cmd.length()), 16)+larguraBarramento;
+        return Integer.parseInt(cmd.substring(2, cmd.length()), 16)+larguraBarramento*2;
     }
 }
-
+//0x0001 == 65
 
 //    private static byte[] intToByte64(long[] valor) {
 //        int mask0_8 = 0xFF;

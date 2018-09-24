@@ -4,7 +4,7 @@ public class Decoder {
 
      public short[] byteToShort(byte payload[]){
         int contador =0;
-        short vetor[] = new short[payload.length/2];
+         short vetor[] = new short[payload.length/2];
         for (int i = 0; i < payload.length ; i= i+ 2) {
             ByteBuffer wrapped = ByteBuffer.wrap(new byte[]{
                     payload[i],
